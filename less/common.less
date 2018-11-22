@@ -1,0 +1,119 @@
+@import "base";
+@import "normalize";
+@import "adapter";
+@import "vairable";
+
+.container {
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: @bdColor;
+}
+
+/*头部*/
+.header {
+  height: 50rem/@base;
+  width: 100%;
+  background-color: @mainColor;
+
+  a {
+    display: block;
+    padding-top: 12.5rem/@base;
+    padding-left: 10rem/@base;
+
+    img {
+      width: auto;
+      height: 25rem/@base;
+    }
+  }
+
+  div.fr {
+    padding: 8rem/@base;
+
+    img {
+      display: block;
+      width: 34rem/@base;
+    }
+  }
+}
+
+/* 标题样式 */
+.title {
+  height: 35rem/@base;
+  background-image: linear-gradient(to bottom, #ffaf47, #ff9000);
+  position: relative;
+  padding-right: 25rem/@base;
+  line-height: 35rem/@base;
+  padding-left: 10rem/@base;
+
+  .icon_right {
+    width: 20rem/@base;
+    height: 20rem/@base;
+    position: absolute;
+    top: 7.5rem/@base;
+    right: 10rem/@base;
+    background-image: url("../images/more.png");
+    background-size: 20rem/@base 20rem/@base;
+  }
+
+  p {
+    font-size: 16rem/@base;
+    color: #fff;
+  }
+}
+
+
+.footer{
+  background-color: #EFEFEF;
+
+  .title {
+    margin-top: 10rem/@base;
+  }
+
+  .login {
+    height: 35rem/@base;
+    width: 100%;
+    border-top: 1rem/@base solid #ccc;
+    border-bottom: 1rem/@base solid #ccc;
+    margin-top: 20rem/@base;
+    line-height: 35rem/@base;
+    
+    a {
+      display: block;
+      float: left;
+      width: 33.33%;
+      height: 100%;
+      text-align: center;
+      border-right: 1rem/@base solid #ccc;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+  
+  .info {
+    width: 100%;
+    height: 62rem/@base;
+    padding: 15rem/@base 0;
+    text-align: center;
+
+    p.top {
+      font-size: 14rem/@base;
+
+      .mobapp {
+        color: red;
+      }
+      
+      .mobpri {
+        color: #666;
+      }
+    }
+
+    p.bottom {
+      font-size: 12rem/@base;
+      color: #666;
+    }
+  }
+}

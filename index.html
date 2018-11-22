@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买-首页</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./mmb.ico">
+
+</head>
+<body>
+
+<div class="container">
+    <!-- 头部 -->
+    <div class="header">
+        <a href="index.html" class="fl"><img src="./images/header_logo.png" alt=""></a>
+        <div class="fr">
+            <img src="./images/header_app.png" alt="">
+        </div>
+    </div>
+
+    <!-- 搜索框 -->
+    <div class="search">
+        <div class="search_input">
+            <input type="text" placeholder="请输入你想比价的商品">
+        </div>
+        <div class="search_btn">
+            <button>搜索</button>
+        </div>
+    </div>
+
+    <!-- 导航区 -->
+    <div class="nav">
+        <ul class="clearfix">
+
+        </ul>
+    </div>
+
+    <!-- 商品列表 -->
+    <div class="goodsList">
+        <div class="title">
+            <i class="icon_right"></i>
+            <p>超值折扣推荐</p>
+        </div>
+        <div class="content">
+            <ul>
+
+            </ul>
+        </div>
+        <div class="more">
+            <a href="#">更多优惠信息>></a>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="title">
+            <i class="icon_right"></i>
+            <p>品牌排行</p>
+        </div>
+        <div class="login">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#">返回顶部</a>
+        </div>
+        <div class="info">
+            <p class="top">
+                <a href="#" class="mobapp">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <a href="#" class="mobpri">--掌上比价平台</a>
+            </p>
+            <p class="bottom">m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+
+<!-- 导航列表模版 -->
+<script type="text/html" id="navTmp">
+    {{ each result v i }}
+        <li class="nav_list {{ i === 7 ? 'more' : '' }}{{ i > 7 ? 'hide' : '' }}" data-id="{{ v.indexmenuId }}">
+            <a href="#">
+                {{@v.img}}
+                <p>{{ v.name }}</p>
+            </a>
+        </li>
+    {{ /each }}
+</script>
+
+
+<!-- 渲染商品列表模版 -->
+<script type="text/html" id="goodsTmp">
+    {{ each result v i }}
+        <li>
+            <a href="#">
+                <div class="img">
+                    {{@v.productImgSm}}
+                </div>
+                <div class="desc">
+                    <div class="desc_top">{{ v.productName }} <span>{{ v.productPinkage }}</span></div>
+                    <div class="desc_bottom">
+                        <span class="fl">{{ v.productFrom }} | {{ v.productTime }}</span>
+                        <span class="fr">{{ v.productComCount }}</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+    {{ /each }}
+</script>
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

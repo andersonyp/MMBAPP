@@ -1,0 +1,157 @@
+@import "vairable";
+@import "adapter";
+
+/* 搜索框 */
+.search {
+  height: 51rem/@base;
+  background-color: #fff;
+  padding: 10rem/@base;
+  position: relative;
+  padding-right: 83rem/@base;
+
+  .search_input {
+    width: 100%;
+    height: 30rem/@base;
+
+    input {
+      width: 100%;
+      height: 100%;
+      background-color: @bdColor;
+      padding-left: 20rem/@base;
+      border-radius: 15rem/@base;
+      font-size: 14rem/@base;
+    }
+  }
+
+  .search_btn {
+    position: absolute;
+    top: 10rem/@base;
+    right: 10rem/@base;
+    width: 63rem/@base;
+    height: 30rem/@base;
+
+    button {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background-color: @mainColor;
+      border-radius: 15rem/@base;
+      font-size: 16rem/@base;
+      color: #fff;
+    }
+  }
+
+}
+
+/* 导航栏 */
+.nav {
+  margin-top: 10rem/@base;
+  padding: 10rem/@base 0;
+  background-color: #fff;
+  
+  ul {
+
+    li {
+      width: 25%;
+      float: left;
+      
+      a {
+
+        display: block;
+        text-align: center;
+        margin-top: 15rem/@base;
+
+        img {
+          width: 50rem/@base;
+          margin: 0 auto;
+        }
+
+        p {
+          font-size: 12rem/@base;
+          margin-top: 5rem/@base;
+        }
+      }
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+/* 商品列表 */
+.goodsList {
+  margin-top: 5rem/@base;
+
+  .content {
+    ul li {
+      height: 130rem/@base;
+      padding: 15rem/@base 10rem/@base;
+      background-color: #fff;
+      border-bottom: 1rem/@base solid #ccc;
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        .img {
+          float: left;
+
+          img {
+            width: 100rem/@base;
+            height: 100rem/@base;
+          }
+        }
+
+
+        .desc {
+          overflow: hidden;
+          padding-left: 10rem/@base;
+          position: relative;
+          height: 100%;
+
+          .desc_top {
+            font-size: 15rem/@base;
+
+            span {
+              color: @mainColor;
+            }
+          }
+
+
+          .desc_bottom {
+            width: 100%;
+            padding-left: 10rem/@base;
+            position: absolute;
+            bottom: 10rem/@base;
+            left: 0;
+            font-size: 12rem/@base;
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+
+  .more {
+    width: 100%;
+    height: 43rem/@base;
+    background-color: #fff;
+    padding: 10rem/@base 10rem/@base 0;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 32rem/@base;
+      border: 1rem/@base solid #ccc;
+      border-radius: 5rem/@base;
+      background-image: linear-gradient(to bottom, #ffffff, #f4f4f4);
+      text-align: center;
+      line-height: 32rem/@base;
+      font-size: 14rem/@base;
+    }
+  }
+}
+
+/* 底部 */
