@@ -1,0 +1,175 @@
+@import "adapter";
+@import "vairable";
+
+.main {
+  width: 100%;
+  height: 5000px;
+}
+
+.header {
+
+  padding-left: 48rem/@base;
+  padding-right: 44rem/@base;
+
+  a {
+    width: 48rem/@base;
+    height: 48rem/@base;
+    display: block;
+    background: url("../images/icback.svg") no-repeat;
+    background-size: 20rem/@base 20rem/@base;
+    background-clip: content-box;
+    background-origin: content-box;
+    padding: 14rem/@base;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  h3 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    line-height: 50rem/@base;
+    font-size: 18rem/@base;
+  }
+}
+
+.main {
+  background-color: #fff;
+
+  .mon_product {
+    padding: 20rem/@base 20rem/@base 0 10rem/@base;
+
+    h3 {
+      height: 22rem/@base;
+      font-size: 18rem/@base;
+      font-weight: 700;
+      color: #5A5A5A;
+      margin: 0;
+    }
+
+    .subtitle {
+      color: #999;
+      font-size: 12rem/@base;
+      margin: 20rem/@base 5rem/@base;
+    }
+
+    .content {
+
+      font-size: 15rem/@base;
+      color: #666;
+
+      & img:first-child {
+        width: 100rem/@base;
+        height: 100rem/@base;
+        float: right;
+      }
+
+      & img:last-child {
+        width: 350rem/@base;
+        height: 350rem/@base;
+      }
+    }
+  }
+
+  .mmb_extra {
+
+    padding: 0 10rem/@base;
+
+    #disstorck {
+      width: 136rem/@base;
+      margin: 20rem/@base auto;
+      font-size: 12rem/@base;
+      font-weight: 700;
+      padding: 0 10rem/@base;
+      border: 1rem/@base solid #ccc;
+      box-shadow: 2rem/@base 0 2rem/@base #ccc;
+
+      li {
+        height: 21rem/@base;
+        width: 100%;
+        padding: 0 10rem/@base;
+        line-height: 21rem/@base;
+        border-bottom: 1rem/@base dashed #ccc;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        a {
+          display: block;
+
+          span {
+            float: right;
+            color: @mainColor;
+          }
+        }
+      }
+    }
+
+    .goLink {
+      height: 31rem/@base;
+      background-color: @mainColor;
+      margin: 0 10rem/@base 40rem/@base;
+      color: #fff;
+      text-align: center;
+      line-height: 31rem/@base;
+      font-size: 14rem/@base;
+      border-radius: 5rem/@base;
+    }
+
+    .commont {
+      margin-top: 10rem/@base;
+
+      .tit {
+        padding: 10rem/@base;
+
+        h3 {
+          font-size: 18rem/@base;
+        }
+      }
+
+      .reply {
+        padding: 10rem/@base;
+        position: relative;
+
+        textarea {
+          width: 100%;
+          border: 1rem/@base solid #ccc;
+        }
+
+        button {
+          width: 100rem/@base;
+          height: 36rem/@base;
+          position: absolute;
+          bottom: 13rem/@base;
+          right: 10rem/@base;
+          border: 1rem/@base solid @mainColor;
+          background-color: @mainColor;
+          color: #fff;
+          font-size: 14rem/@base;
+        }
+      }
+    }
+
+    .list {
+
+      padding: 18rem/@base 10rem/@base;
+      
+      .imgBox {
+        width: 40rem/@base;
+        height: 40rem/@base;
+        float: left;
+        background-color: lightcoral;
+      }
+      
+      .left {
+        overflow: hidden;
+        height: 40rem/@base;
+        background-color: lawngreen;
+      }
+    }
+  }
+
+}

@@ -51,14 +51,14 @@
         <div class="more">
             <a href="#">更多优惠信息>></a>
         </div>
-    </div>
-
-    <!-- 底部 -->
-    <div class="footer">
         <div class="title">
             <i class="icon_right"></i>
             <p>品牌排行</p>
         </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
         <div class="login">
             <a href="#">登录</a>
             <a href="#">注册</a>
@@ -79,7 +79,7 @@
 <script type="text/html" id="navTmp">
     {{ each result v i }}
         <li class="nav_list {{ i === 7 ? 'more' : '' }}{{ i > 7 ? 'hide' : '' }}" data-id="{{ v.indexmenuId }}">
-            <a href="#">
+            <a href="{{ v.titlehref }}">
                 {{@v.img}}
                 <p>{{ v.name }}</p>
             </a>
@@ -92,7 +92,7 @@
 <script type="text/html" id="goodsTmp">
     {{ each result v i }}
         <li>
-            <a href="#">
+            <a href="moneyproduct.html?productId={{ v.productId }}">
                 <div class="img">
                     {{@v.productImgSm}}
                 </div>

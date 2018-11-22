@@ -282,16 +282,22 @@ th {
 }
 .container {
   width: 100%;
+  height: 100%;
   max-width: 750px;
   min-width: 320px;
   margin: 0 auto;
   background-color: #f1f1f1;
+  position: relative;
+  padding: 1rem 0 2.3rem;
 }
 /*头部*/
 .header {
   height: 1rem;
   width: 100%;
   background-color: #ff841d;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .header a {
   display: block;
@@ -304,6 +310,9 @@ th {
 }
 .header div.fr {
   padding: 0.16rem;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .header div.fr img {
   display: block;
@@ -317,6 +326,7 @@ th {
   padding-right: 0.5rem;
   line-height: 0.7rem;
   padding-left: 0.2rem;
+  margin-top: 0.2rem;
 }
 .title .icon_right {
   width: 0.4rem;
@@ -332,7 +342,11 @@ th {
   color: #fff;
 }
 .footer {
+  width: 100%;
   background-color: #EFEFEF;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .footer .title {
   margin-top: 0.2rem;
@@ -342,7 +356,7 @@ th {
   width: 100%;
   border-top: 0.02rem solid #cccccc;
   border-bottom: 0.02rem solid #cccccc;
-  margin-top: 0.4rem;
+  margin-top: 0.2rem;
   line-height: 0.7rem;
 }
 .footer .login a {
@@ -363,7 +377,7 @@ th {
   text-align: center;
 }
 .footer .info p.top {
-  font-size: 0.28rem;
+  font-size: 0.24rem;
 }
 .footer .info p.top .mobapp {
   color: red;
@@ -374,4 +388,8 @@ th {
 .footer .info p.bottom {
   font-size: 0.24rem;
   color: #666;
+}
+.mmb_bar {
+  background: url("../images/icon_bar.png") no-repeat;
+  background-size: 4.4rem 2.64rem;
 }
