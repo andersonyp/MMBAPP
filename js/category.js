@@ -5,7 +5,6 @@ $(function () {
         url: 'http://127.0.0.1:9090/api/getcategorytitle',
         dataType: 'json',
         success: function (info) {
-            console.log(info);
             $('.nav ul').html( template('navTmp',info) );
 
             $('.nav').on('click','a',function () {
@@ -22,9 +21,8 @@ $(function () {
                     },
                     dataType: "json",
                     success: function (info) {
-                        console.log(info);
                         $that.next().html( template('navListTmp',info) );
-                        $that.next().slideToggle();
+                        $that.next().stop().slideToggle();
                     }
                 })
             })
