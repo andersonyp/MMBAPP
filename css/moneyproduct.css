@@ -55,7 +55,6 @@
 }
 .main {
   width: 100%;
-  height: 5000px;
 }
 .header {
   padding-left: 0.96rem;
@@ -113,10 +112,7 @@
   width: 7rem;
   height: 7rem;
 }
-.main .mmb_extra {
-  padding: 0 0.2rem;
-}
-.main .mmb_extra #disstorck {
+.main .mon_product #disstorck {
   width: 2.72rem;
   margin: 0.4rem auto;
   font-size: 0.24rem;
@@ -125,24 +121,24 @@
   border: 0.02rem solid #cccccc;
   box-shadow: 0.04rem 0 0.04rem #cccccc;
 }
-.main .mmb_extra #disstorck li {
+.main .mon_product #disstorck li {
   height: 0.42rem;
   width: 100%;
   padding: 0 0.2rem;
   line-height: 0.42rem;
   border-bottom: 0.02rem dashed #cccccc;
 }
-.main .mmb_extra #disstorck li:last-child {
+.main .mon_product #disstorck li:last-child {
   border-bottom: none;
 }
-.main .mmb_extra #disstorck li a {
+.main .mon_product #disstorck li a {
   display: block;
 }
-.main .mmb_extra #disstorck li a span {
+.main .mon_product #disstorck li a strong {
   float: right;
   color: #ff841d;
 }
-.main .mmb_extra .goLink {
+.main .goLink {
   height: 0.62rem;
   background-color: #ff841d;
   margin: 0 0.2rem 0.8rem;
@@ -152,45 +148,73 @@
   font-size: 0.28rem;
   border-radius: 0.1rem;
 }
-.main .mmb_extra .commont {
+.main .mmb_extra {
+  padding: 0 0.2rem;
+}
+.main .mmb_extra .cu-content-pl {
   margin-top: 0.2rem;
 }
-.main .mmb_extra .commont .tit {
+.main .mmb_extra .cu-content-pl .tit {
   padding: 0.2rem;
-}
-.main .mmb_extra .commont .tit h3 {
   font-size: 0.36rem;
 }
-.main .mmb_extra .commont .reply {
+.main .mmb_extra .cu-content-pl .reply {
   padding: 0.2rem;
   position: relative;
 }
-.main .mmb_extra .commont .reply textarea {
-  width: 100%;
+.main .mmb_extra .cu-content-pl .reply .form {
+  height: 2.32rem;
+  position: relative;
   border: 0.02rem solid #cccccc;
 }
-.main .mmb_extra .commont .reply button {
+.main .mmb_extra .cu-content-pl .reply .form textarea {
+  width: 90%;
+  height: 1.36rem;
+  position: absolute;
+  top: 0.04rem;
+  left: 5%;
+}
+.main .mmb_extra .cu-content-pl .reply .form .ctrl input {
   width: 2rem;
   height: 0.72rem;
-  position: absolute;
-  bottom: 0.26rem;
-  right: 0.2rem;
-  border: 0.02rem solid #ff841d;
+  font-size: 0.32rem;
+  color: #ffffff;
+  border: 0.04rem solid #ff841d;
   background-color: #ff841d;
-  color: #fff;
-  font-size: 0.28rem;
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
 }
 .main .mmb_extra .list {
   padding: 0.36rem 0.2rem;
 }
-.main .mmb_extra .list .imgBox {
+.main .mmb_extra .list li {
+  margin-bottom: 0.2rem;
+}
+.main .mmb_extra .list .userimg {
   width: 0.8rem;
   height: 0.8rem;
   float: left;
-  background-color: lightcoral;
 }
-.main .mmb_extra .list .left {
+.main .mmb_extra .list .userimg img {
+  border-radius: 50%;
+}
+.main .mmb_extra .list .con {
   overflow: hidden;
   height: 0.8rem;
-  background-color: lawngreen;
+  padding: 0 0.2rem;
+}
+.main .mmb_extra .list .con .name {
+  font-size: 0.28rem;
+}
+.main .mmb_extra .list .con .name .username {
+  color: #5997CC;
+  float: left;
+}
+.main .mmb_extra .list .con .name .time {
+  color: #999;
+  float: right;
+}
+.main .mmb_extra .list .con .content {
+  font-size: 0.28rem;
 }

@@ -3,7 +3,6 @@
 
 .main {
   width: 100%;
-  height: 5000px;
 }
 
 .header {
@@ -71,11 +70,6 @@
         height: 350rem/@base;
       }
     }
-  }
-
-  .mmb_extra {
-
-    padding: 0 10rem/@base;
 
     #disstorck {
       width: 136rem/@base;
@@ -100,74 +94,114 @@
         a {
           display: block;
 
-          span {
+          strong {
             float: right;
             color: @mainColor;
           }
         }
       }
     }
+  }
 
-    .goLink {
-      height: 31rem/@base;
-      background-color: @mainColor;
-      margin: 0 10rem/@base 40rem/@base;
-      color: #fff;
-      text-align: center;
-      line-height: 31rem/@base;
-      font-size: 14rem/@base;
-      border-radius: 5rem/@base;
-    }
+  .goLink {
+    height: 31rem/@base;
+    background-color: @mainColor;
+    margin: 0 10rem/@base 40rem/@base;
+    color: #fff;
+    text-align: center;
+    line-height: 31rem/@base;
+    font-size: 14rem/@base;
+    border-radius: 5rem/@base;
+  }
 
-    .commont {
+  .mmb_extra {
+
+    padding: 0 10rem/@base;
+
+    .cu-content-pl {
       margin-top: 10rem/@base;
 
       .tit {
         padding: 10rem/@base;
+        font-size: 18rem/@base;
 
-        h3 {
-          font-size: 18rem/@base;
-        }
       }
 
       .reply {
         padding: 10rem/@base;
         position: relative;
 
-        textarea {
-          width: 100%;
+        .form {
+          height: 116rem/@base;
+          position: relative;
           border: 1rem/@base solid #ccc;
+
+
+            textarea {
+              width: 90%;
+              height: 68rem/@base;
+              position: absolute;
+              top: 2rem/@base;
+              left: 5%;
+            }
+
+           .ctrl input {
+            width: 100rem/@base;
+            height: 36rem/@base;
+            font-size: 16rem/@base;
+            color: #ffffff;
+            border: 2rem/@base solid #ff841d;
+            background-color: #ff841d;
+            position: absolute;
+            bottom: 0rem;
+            right: 0rem;
+          }
         }
 
-        button {
-          width: 100rem/@base;
-          height: 36rem/@base;
-          position: absolute;
-          bottom: 13rem/@base;
-          right: 10rem/@base;
-          border: 1rem/@base solid @mainColor;
-          background-color: @mainColor;
-          color: #fff;
-          font-size: 14rem/@base;
-        }
+
       }
     }
 
     .list {
 
+      li {
+        margin-bottom: 10rem/@base;
+      }
+
       padding: 18rem/@base 10rem/@base;
       
-      .imgBox {
+      .userimg {
         width: 40rem/@base;
         height: 40rem/@base;
         float: left;
-        background-color: lightcoral;
+
+        img {
+          border-radius: 50%;
+        }
       }
       
-      .left {
+      .con {
         overflow: hidden;
         height: 40rem/@base;
-        background-color: lawngreen;
+        padding: 0 10rem/@base;
+
+        .name {
+          font-size: 14rem/@base;
+          
+          .username {
+            color: #5997CC;
+            float: left;
+          }
+          
+          .time {
+            color: #999;
+            float: right;
+          }
+        }
+
+        .content {
+          font-size: 14rem/@base;
+        }
       }
     }
   }
