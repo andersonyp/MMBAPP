@@ -1,0 +1,90 @@
+@import "adapter";
+@import "vairable";
+
+.container {
+  background-color: #fff;
+}
+
+.header {
+
+  padding-left: 48rem/@base;
+  padding-right: 44rem/@base;
+
+  a {
+    width: 48rem/@base;
+    height: 48rem/@base;
+    display: block;
+    background: url("../images/icback.svg") no-repeat;
+    background-size: 20rem/@base 20rem/@base;
+    background-clip: content-box;
+    background-origin: content-box;
+    padding: 14rem/@base;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  h3 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    line-height: 50rem/@base;
+    font-size: 18rem/@base;
+  }
+}
+
+.product {
+    ul li {
+      width: 50%;
+      float: left;
+      padding: 15rem/@base 15rem/@base 15rem/@base 22rem/@base;
+      border-right: 1rem/@base solid #ccc;
+      border-bottom: 1rem/@base solid #ccc;
+
+      &:nth-child(2n) {
+        border-right: none;
+      }
+
+      a {
+        display: block;
+
+        img {
+          width: 140rem/@base;
+          height: 140rem/@base;
+          margin: 0 auto;
+        }
+      }
+
+      .desc {
+        p {
+          font-size: 14rem/@base;
+          font-weight: 700;
+          color: #333;
+
+          &.proName {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+        }
+
+        .bottom {
+          span:first-child {
+            display: block;
+            height: 18rem/@base;
+            line-height: 18rem/@base;
+            font-size: 14rem/@base;
+            color: @mainColor;
+            margin: 8rem/@base 0;
+          }
+
+          span:last-child {
+            font-size: 12rem/@base;
+            color: #999;
+          }
+        }
+      }
+    }
+}

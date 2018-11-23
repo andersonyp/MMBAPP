@@ -7,7 +7,7 @@
     <title>慢慢买-商品详情</title>
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/moneyproduct.css">
+    <link rel="stylesheet" href="./css/discount.css">
     <link rel="icon" href="./mmb.ico">
 
 </head>
@@ -25,16 +25,15 @@
 
     <div class="main">
         <div class="mon_product">
-
+            
         </div>
 
         <div class="goLink">前往购买</div>
 
-        <div class="mmb_extra">
+    </div>
 
+    <div class="mmb_extra">
 
-
-        </div>
 
     </div>
 
@@ -56,10 +55,9 @@
     </div>
 </div>
 
-<!-- 商品详情模版 -->
-<script type="text/html" id="productTmp">
+<!-- 商品模版 -->
+<script type="text/html" id="proTmp">
     <% var v = result[0] %>
-
     <h3>{{ v.productName }}</h3>
     <div class="subtitle">
         <span>{{ v.productFrom }}</span>
@@ -67,15 +65,13 @@
         <span>{{ v.productTips }}</span>
     </div>
     <div class="content">
-        {{@v.productImg2}}
-        <p>{{ v.productInfo }}{{ v.productInfo1 }}</p>
-        <p>{{ v.productInfo2 }}</p>
-        {{@v.productImgSm}}
+        {{@v.productImg}}
+        <p>{{ v.productInfo }}</p>
+        {{@v.productImg}}
     </div>
-    {{@v.productCity}}
 </script>
 
-<!-- 二维码模版 -->
+<!-- 评论模版 -->
 <script type="text/html" id="commonTmp">
     <% var v = result[0] %>
     <div class="wechatCode">
@@ -87,6 +83,6 @@
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
 <script src="./js/common.js"></script>
-<script src="./js/moneyproduct.js"></script>
+<script src="./js/discount.js"></script>
 </body>
 </html>

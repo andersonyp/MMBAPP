@@ -1,0 +1,143 @@
+@import "adapter";
+@import "vairable";
+
+.container {
+  background-color: #fff;
+  padding-bottom: 90rem/@base;
+}
+
+.header {
+
+  padding-left: 48rem/@base;
+  padding-right: 44rem/@base;
+
+  a {
+    width: 48rem/@base;
+    height: 48rem/@base;
+    display: block;
+    background: url("../images/icback.svg") no-repeat;
+    background-size: 20rem/@base 20rem/@base;
+    background-clip: content-box;
+    background-origin: content-box;
+    padding: 14rem/@base;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  h3 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    line-height: 50rem/@base;
+    font-size: 18rem/@base;
+  }
+}
+
+.main {
+  background-color: #fff;
+
+  padding: 20rem/@base 20rem/@base 0 10rem/@base;
+
+  h3 {
+    height: 22rem/@base;
+    font-size: 18rem/@base;
+    font-weight: 700;
+    color: #5A5A5A;
+    margin: 0;
+  }
+
+  .subtitle {
+    color: #999;
+    font-size: 12rem/@base;
+    margin: 20rem/@base 5rem/@base;
+  }
+
+  .content {
+
+    font-size: 16rem/@base;
+    color: #666;
+
+    & img:first-child {
+      width: 120rem/@base;
+      height: 102rem/@base;
+      float: right;
+    }
+
+    & img:last-child {
+      width: 220rem/@base;
+      height: 220rem/@base;
+      margin-top: 20rem/@base;
+    }
+  }
+
+  .goLink {
+    height: 31rem/@base;
+    background-color: @mainColor;
+    margin: 40rem/@base 10rem/@base;
+    color: #fff;
+    text-align: center;
+    line-height: 31rem/@base;
+    font-size: 14rem/@base;
+    border-radius: 5rem/@base;
+  }
+
+}
+
+.mmb_extra {
+
+  padding: 0 10rem/@base;
+
+  //.cu-content-pl {
+  //  margin-top: 10rem/@base;
+  //
+  //
+  //}
+
+  .tit {
+    padding: 6rem/@base;
+    font-size: 18rem/@base;
+
+  }
+
+  .reply {
+    padding: 5rem/@base;
+    position: relative;
+
+    .form {
+      height: 116rem/@base;
+      position: relative;
+      border: 1rem/@base solid #ccc;
+
+      textarea {
+        width: 90%;
+        height: 68rem/@base;
+        position: absolute;
+        top: 2rem/@base;
+        left: 5%;
+      }
+
+      .ctrl input {
+        width: 100rem/@base;
+        height: 36rem/@base;
+        font-size: 16rem/@base;
+        color: #ffffff;
+        border: 2rem/@base solid #ff841d;
+        background-color: #ff841d;
+        position: absolute;
+        bottom: 0rem;
+        right: 0rem;
+      }
+    }
+
+  }
+
+}
+
+.footer {
+
+  .login {
+    margin-top: 0;
+  }
+}
