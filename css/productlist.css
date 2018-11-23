@@ -53,6 +53,9 @@
     font-size: 89.29px;
   }
 }
+.container {
+  background-color: #fff;
+}
 /* 搜索框 */
 .search {
   height: 1.02rem;
@@ -89,31 +92,36 @@
   font-size: 0.32rem;
   color: #fff;
 }
-/* 导航栏 */
 .nav {
-  margin-top: 0.2rem;
-  padding: 0.2rem 0;
-  background-color: #fff;
+  height: 0.76rem;
+  background-image: linear-gradient(to bottom, #ffffff, #ebebeb);
+  border-top: 0.02rem solid #cccccc;
+  border-bottom: 0.02rem solid #cccccc;
+  line-height: 0.76rem;
+  padding: 0 0.2rem;
 }
-.nav ul li {
-  width: 25%;
-  float: left;
-}
-.nav ul li a {
+.nav a {
   display: block;
-  text-align: center;
-  margin-top: 0.3rem;
+  float: left;
+  font-size: 0.28rem;
+  padding: 0 0.05rem;
 }
-.nav ul li a img {
-  width: 1rem;
-  margin: 0 auto;
+.nav a span {
+  margin-left: 0.1rem;
 }
-.nav ul li a p {
-  font-size: 0.24rem;
+.nav button {
+  width: 1.2rem;
+  height: 0.56rem;
   margin-top: 0.1rem;
-}
-.hide {
-  display: none;
+  line-height: 0.56rem;
+  border-radius: 0.1rem;
+  background: linear-gradient(to bottom, #d7d7d7, #f5f5f5);
+  font-size: 0.28rem;
+  outline-style: none;
+  border: none;
+  border-bottom: 0.02rem solid #cccccc;
+  box-shadow: 0 0.02rem 0.04rem #888888;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 /* 商品列表 */
 .goodsList {
@@ -144,7 +152,7 @@
   height: 100%;
 }
 .goodsList .content ul li a .desc .desc_top {
-  font-size: 0.3rem;
+  font-size: 0.28rem;
 }
 .goodsList .content ul li a .desc .desc_top span {
   color: #ff841d;
@@ -156,7 +164,13 @@
   bottom: 0.2rem;
   left: 0;
   font-size: 0.24rem;
-  color: #999;
+}
+.goodsList .content ul li a .desc .desc_bottom .price {
+  color: #EA3900;
+  font-size: 0.32rem;
+}
+.goodsList .content ul li a .desc .desc_bottom span {
+  color: #666;
 }
 .goodsList .more {
   width: 100%;
@@ -174,4 +188,42 @@
   text-align: center;
   line-height: 0.64rem;
   font-size: 0.26rem;
+}
+/* 分页功能 */
+.paging {
+  height: 0.76rem;
+  background-color: #fff;
+  margin-top: 0.2rem;
+  line-height: 0.76rem;
+}
+.paging div {
+  width: 33.33%;
+  text-align: center;
+}
+.paging div button {
+  width: 1.64rem;
+  height: 0.66rem;
+  font-size: 0.28rem;
+  line-height: 0.66rem;
+}
+.paging div .currentPage {
+  width: 1.54rem;
+  height: 0.72rem;
+  margin: 0 auto;
+  border: 0.02rem solid #cccccc;
+  cursor: pointer;
+  font-size: 0.28rem;
+  user-select: none;
+  position: relative;
+}
+.paging div .currentPage .morePage {
+  width: 100%;
+  border: 0.02rem solid #cccccc;
+  background-color: #fff;
+  position: absolute;
+  top: 0.68rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  display: none;
 }

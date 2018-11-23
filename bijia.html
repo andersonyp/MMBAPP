@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买-首页</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/bijia.css">
+    <link rel="icon" href="./mmb.ico">
+
+</head>
+<body>
+
+<div class="container">
+    <!-- 头部 -->
+    <div class="header">
+        <a href="index.html" class="fl"><img src="./images/header_logo.png" alt=""></a>
+        <div class="fr">
+            <img src="./images/header_app.png" alt="">
+        </div>
+    </div>
+
+    <!-- 搜索框 -->
+    <div class="search">
+        <div class="search_input">
+            <input type="text" placeholder="请输入你想比价的商品">
+        </div>
+        <div class="search_btn">
+            <button>搜索</button>
+        </div>
+    </div>
+
+    <!-- 面包屑导航 -->
+    <div class="nav">
+
+    </div>
+
+    <!-- 商品详细信息 -->
+    <div class="goodsInfo">
+
+    </div>
+
+    <!-- 比价 -->
+    <div class="function">
+        <div class="active">比价购买</div>
+        <div>产品参数</div>
+        <div>评价（2322）</div>
+    </div>
+
+    <!-- 去购买 -->
+    <div class="goshop">
+
+    </div>
+
+    <!-- 网友评价 -->
+    <div class="bj_comment">
+        网友评价
+    </div>
+
+    <!-- 商品评价 -->
+    <div class="goodsCom">
+        <ul>
+
+        </ul>
+    </div>
+
+    <!-- 查看更多评价 -->
+    <div class="moreComment">
+        <a href="#">查看更多评价</a>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="login">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#">返回顶部</a>
+        </div>
+        <div class="info">
+            <p class="top">
+                <a href="#" class="mobapp">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                <a href="#" class="mobpri">--掌上比价平台</a>
+            </p>
+            <p class="bottom">m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- 导航模版 -->
+<script type="text/html" id="navTmp">
+    <a href="index.html">首页<span>&gt;</span></a>
+    <a href="productlist.html?categoryid={{category.categoryId}}">{{ category.category }}<span>&gt;</span></a>
+    <a href="#">{{ productName }}<span>&gt;</span></a>
+    <button class="fr">筛选</button>
+</script>
+
+<!-- 商品详情模版 -->
+<script type="text/html" id="goodsInfoTmp">
+    <% var v = result[0] %>
+    <h3>{{ v.productName }}</h3>
+    {{@v.productImg}}
+    <button>收藏</button>
+</script>
+
+
+<!-- 去购物车模版 -->
+<script type="text/html" id="goshopTmp">
+    <div class="top">
+        <% var v = result[0] %>
+        {{@v.bjShop}}
+    </div>
+    <div class="bottom">
+        * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+    </div>
+</script>
+
+<!-- 评论模版 -->
+<script type="text/html" id="goodsComTmp">
+    {{ each result v i }}
+    <li class="comList">
+        <a href="javascript:;">
+            <div class="comTitle">
+                <span class="fl">{{ v.comName }}</span>
+                <span class="fr">{{ v.comTime }}</span>
+                <span class="comFrom">{{ v.comFrom }}</span>
+            </div>
+            <div class="comComment">
+                {{ v.comContent }}
+            </div>
+        </a>
+    </li>
+    {{ /each }}
+</script>
+
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/bijia.js"></script>
+</body>
+</html>

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>慢慢买-省钱控</title>
+    <title>慢慢买-首页</title>
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/moneycltr.css">
+    <link rel="stylesheet" href="./css/productlist.css">
     <link rel="icon" href="./mmb.ico">
 
 </head>
@@ -15,11 +15,25 @@
 <div class="container">
     <!-- 头部 -->
     <div class="header">
-        <a href="index.html" class="fl"></a>
-        <h3>省钱控-最新优惠</h3>
+        <a href="index.html" class="fl"><img src="./images/header_logo.png" alt=""></a>
         <div class="fr">
             <img src="./images/header_app.png" alt="">
         </div>
+    </div>
+
+    <!-- 搜索框 -->
+    <div class="search">
+        <div class="search_input">
+            <input type="text" placeholder="请输入你想比价的商品">
+        </div>
+        <div class="search_btn">
+            <button>搜索</button>
+        </div>
+    </div>
+
+    <!-- 面包屑导航 -->
+    <div class="nav">
+
     </div>
 
     <!-- 商品列表 -->
@@ -34,7 +48,7 @@
     <!-- 分页功能 -->
     <div class="paging clearfix">
         <div class="fl">
-            <button id="prevPage">上一页</button>
+            <button id="prev">上一页</button>
         </div>
         <div class="fl">
             <div class="currentPage">
@@ -47,10 +61,9 @@
             </div>
         </div>
         <div class="fl">
-            <button id="nextPage">下一页</button>
+            <button id="next">下一页</button>
         </div>
     </div>
-
 
     <!-- 底部 -->
     <div class="footer">
@@ -71,19 +84,28 @@
 </div>
 
 
+<!-- 导航模版 -->
+<script type="text/html" id="navTmp">
+    <a href="index.html">首页<span>&gt;</span></a>
+    <a href="category.html">全部分类<span>&gt;</span></a>
+    <a href="#">{{ result[0].category }}<span>&gt;</span></a>
+    <button class="fr">筛选</button>
+</script>
+
 <!-- 渲染商品列表模版 -->
 <script type="text/html" id="goodsTmp">
     {{ each result v i }}
     <li>
-        <a href="moneyproduct.html?productId={{ v.productId }}">
+        <a href="bijia.html?productId={{ v.productId }}">
             <div class="img">
-                {{@v.productImgSm}}
+                {{@v.productImg}}
             </div>
             <div class="desc">
                 <div class="desc_top">{{ v.productName }} <span>{{ v.productPinkage }}</span></div>
                 <div class="desc_bottom">
-                    <span class="fl">{{ v.productFrom }} | {{ v.productTime }}</span>
-                    <span class="fr">{{ v.productComCount }}</span>
+                    <div class="price">{{ v.productPrice }}</div>
+                    <span>{{ v.productQuote }}</span>
+                    <span>{{ v.productCom }}</span>
                 </div>
             </div>
         </a>
@@ -91,20 +113,18 @@
     {{ /each }}
 </script>
 
-<!-- 分页数据模版 -->
+<!-- 分页数据li的个数 -->
 <script type="text/html" id="pageTmp">
-    <%for(i = 0; i < pageCount; i ++) {%>
-    <li>
-        <%=i+1%>/
-        <%=pageCount%>
-    </li>
+    <%for (var i = 0; i < pageCount; i++) {%>
+        <li>
+            {{ i+1 }}/{{ pageCount }}
+        </li>
     <%}%>
-
 </script>
 
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
 <script src="./js/common.js"></script>
-<script src="./js/moneyctrl.js"></script>
+<script src="./js/productlist.js"></script>
 </body>
 </html>

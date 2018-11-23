@@ -17,9 +17,14 @@ $(function () {
            success: function (info) {
                $(".content ul").html(template('goodsTmp', info));
 
+
+               // 获取总页数
                totalPage = Math.ceil(info.totalCount / info.pagesize);
+
+               // 将总页数设置给span
                $(".currentPage span").text((pageid + 1) + "/" + totalPage);
 
+               // 通过模板引擎动态生成u中li的个数
                $(".morePage").html(template("pageTmp", {pageCount: totalPage}));
            }
        })
@@ -45,10 +50,13 @@ $(function () {
         render(pageid);
     })
 
+
+    // 点击选择某一页
     $('.currentPage').on('click',function () {
         $(this).find('.morePage').toggle();
     })
 
+    // 点击选择某一页,跳转到哪一页
     $('.currentPage').on('click','.morePage li',function () {
         pageid = $(this).index();
         render(pageid);

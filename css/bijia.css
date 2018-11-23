@@ -1,0 +1,255 @@
+@media (min-width: 320px) {
+  html {
+    font-size: 38.1px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 42.86px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 44.64px;
+  }
+}
+@media (min-width: 384px) {
+  html {
+    font-size: 45.71px;
+  }
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 47.62px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 49.29px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 50.48px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 57.14px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 64.29px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 85.71px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 89.29px;
+  }
+}
+.container {
+  background-color: #fff;
+}
+.nav {
+  height: 0.76rem;
+  background-image: linear-gradient(to bottom, #ffffff, #ebebeb);
+  border-top: 0.02rem solid #cccccc;
+  border-bottom: 0.02rem solid #cccccc;
+  line-height: 0.76rem;
+  padding: 0 0.2rem;
+}
+.nav a {
+  display: block;
+  float: left;
+  font-size: 0.28rem;
+  padding: 0 0.05rem;
+}
+.nav a span {
+  margin-left: 0.1rem;
+}
+.nav button {
+  width: 1.2rem;
+  height: 0.56rem;
+  margin-top: 0.1rem;
+  line-height: 0.56rem;
+  border-radius: 0.1rem;
+  background: linear-gradient(to bottom, #d7d7d7, #f5f5f5);
+  font-size: 0.28rem;
+  outline-style: none;
+  border: none;
+  border-bottom: 0.02rem solid #cccccc;
+  box-shadow: 0 0.02rem 0.04rem #888888;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+/* 搜索框 */
+.search {
+  height: 1.02rem;
+  background-color: #fff;
+  padding: 0.2rem;
+  position: relative;
+  padding-right: 1.66rem;
+}
+.search .search_input {
+  width: 100%;
+  height: 0.6rem;
+}
+.search .search_input input {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  padding-left: 0.4rem;
+  border-radius: 0.3rem;
+  font-size: 0.28rem;
+}
+.search .search_btn {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  width: 1.26rem;
+  height: 0.6rem;
+}
+.search .search_btn button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #ff841d;
+  border-radius: 0.3rem;
+  font-size: 0.32rem;
+  color: #fff;
+}
+.bj_comment {
+  height: 0.66rem;
+  background-color: #DBDBDB;
+  border-top: 0.04rem solid #6e6e6e;
+  text-align: center;
+  line-height: 0.66rem;
+  font-size: 0.28rem;
+  font-weight: 700;
+}
+.goodsInfo {
+  padding: 0.34rem 0.44rem 0;
+  position: relative;
+  height: 5.6rem;
+}
+.goodsInfo h3 {
+  font-size: 0.32rem;
+  font-weight: 700;
+  line-height: 0.54rem;
+  text-align: center;
+}
+.goodsInfo img {
+  width: 3.4rem;
+  height: 3.4rem;
+  margin: 0 auto;
+}
+.goodsInfo button {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background-color: #95D800;
+  border: none;
+  color: #fff;
+  font-size: 0.28rem;
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.6rem;
+}
+.function {
+  height: 0.78rem;
+  border-top: 0.03rem solid #d84d00;
+  border-bottom: 0.03rem solid #d84d00;
+  background-color: #FFC62A;
+}
+.function div {
+  width: 33.33%;
+  float: left;
+  height: 100%;
+  border-right: 0.03rem solid #d84d00;
+  text-align: center;
+  line-height: 0.78rem;
+  color: #fff;
+  font-size: 0.28rem;
+}
+.function div:last-child {
+  border-right: none;
+}
+.function div.active {
+  background-color: #FF9D1E;
+}
+.goshop .top {
+  height: 1rem;
+  position: relative;
+  padding: 0.4rem 0.2rem 0;
+}
+.goshop .top td:nth-child(2) {
+  padding-left: 0.2rem;
+  position: relative;
+  top: -0.06rem;
+  left: 0;
+}
+.goshop .top .red {
+  color: #D10311;
+  font-size: 0.32rem;
+  position: absolute;
+  top: 0.4rem;
+  right: 1.8rem;
+}
+.goshop .top .p_pic {
+  width: 0.3rem;
+  height: 0.3rem;
+  top: 0.34rem;
+  left: 0.2rem;
+}
+.goshop .bottom {
+  padding: 0.24rem 0.2rem 0;
+  height: 1.28rem;
+  line-height: 0.4rem;
+  border-top: 0.02rem solid #cccccc;
+  font-size: 0.24rem;
+  color: #666;
+}
+.goodsCom .comList {
+  padding: 0.3rem 0.2rem 0.2rem;
+  border-bottom: 0.02rem solid #cccccc;
+}
+.goodsCom .comList .comTitle {
+  height: 0.8rem;
+  position: relative;
+  font-size: 0.24rem;
+  padding: 0 0.2rem;
+  color: #666;
+}
+.goodsCom .comList .comTitle .comFrom {
+  position: absolute;
+  bottom: 0;
+  right: 0.2rem;
+}
+.goodsCom .comList .comComment {
+  margin-top: 0.1rem;
+  font-size: 0.24rem;
+  line-height: 0.44rem;
+}
+.moreComment {
+  height: 1.1rem;
+  padding: 0.2rem;
+  line-height: 0.7rem;
+}
+.moreComment a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.1rem;
+  border: 0.02rem solid #cccccc;
+  text-align: center;
+  font-size: 0.28rem;
+  background-image: linear-gradient(to bottom, #e7e7e7, #dcdcdc);
+}
+.footer .login {
+  margin-top: 0;
+}
