@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>慢慢买-商品详情</title>
+    <title>慢慢买-优惠券</title>
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/baicaijia.css">
+    <link rel="stylesheet" href="./css/couponproduct.css">
+    <link rel="stylesheet" href="./lib/animate/animate.css">
     <link rel="icon" href="./mmb.ico">
 
 </head>
@@ -16,28 +17,28 @@
     <!-- 头部 -->
     <div class="header">
         <a href="javascript: history.back();" class="fl"></a>
-        <h3>国内折扣</h3>
+        <h3>优惠券</h3>
         <div class="fr">
             <img src="./images/header_app.png" alt="">
         </div>
     </div>
 
-    <!-- 导航 -->
-    <div class="nav">
-        <div class="wrapper">
-            <ul class="clearfix">
-
-            </ul>
-        </div>
-
-
-    </div>
-
-    <!-- 商品列表 -->
+    <!-- 内容区域 -->
     <div class="content">
-       <ul>
+        <!-- 标题 -->
+        <div class="topTitle">
+            --点餐前出示手机中的优惠券，即可享受优惠--
+        </div>
+        <ul class="clearfix">
 
-       </ul>
+        </ul>
+    </div>
+    
+    <!-- 模态框 -->
+    <div class="modal animated">
+        <div class="modal-in">
+
+        </div>
     </div>
 
     <!-- 底部 -->
@@ -58,30 +59,33 @@
     </div>
 </div>
 
-<!-- 导航栏模版 -->
-<script type="text/html" id="navTmp">
-        {{ each result v i }}
-            <li class="{{ i === 0 ? 'current' : '' }}"><a href="javascript:;" data-id="{{ v.titleId }}">{{ v.title }}</a></li>
-        {{ /each }}
+<!-- 模版 -->
+<script type="text/html" id="listTmp">
+    {{ each result v i }}
+        <li>
+            <a href="javascript:;">
+                <div class="imgBox">
+                    {{@v.couponProductImg}}
+                </div>
+                <div class="desc">
+                    <p class="tit">{{ v.couponProductName }}</p>
+                    <p class="price">{{ v.couponProductPrice }}</p>
+                    <div class="bottom">
+                        <span class="date">{{ v.couponProductTime }}</span>
+                        <span class="arrow_right">&gt;</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+    {{ /each }}
 </script>
 
-<!-- 商品模版 -->
-<script type="text/html" id="goodsTmp">
+
+<!-- 模态框 -->
+<script type="text/html" id="modalTmp">
     {{ each result v i }}
-    <li>
-        <a href="moneyproduct.html?productId={{ v.productId }}">
-            <div class="img fl">
-               {{@v.productImg}}
-            </div>
-            <div class="desc">
-                <div class="tit">{{@v.productName}}</div>
-                <div class="price">{{@v.productPrice}}</div>
-                <div class="remain clearfix">{{@v.productCouponRemain}}</div>
-                <div class="coupon">{{@v.productCoupon}}</div>
-                <div class="href">{{@v.productHref}}</div>
-            </div>
-        </a>
-    </li>
+        {{@v.couponProductImg}}
+        <span class="close"></span>
     {{ /each }}
 </script>
 
@@ -89,6 +93,6 @@
 <script src="./lib/artTemplate/template-web.js"></script>
 <script src="./lib/IScroll/iscroll.js"></script>
 <script src="./js/common.js"></script>
-<script src="./js/baicaijia.js"></script>
+<script src="./js/couponpruduct.js"></script>
 </body>
 </html>

@@ -1,0 +1,148 @@
+@import "adapter";
+@import "vairable";
+
+@color: #F4483E;
+
+.container {
+  background-color: #fff;
+}
+
+.header {
+
+  padding-left: 48rem/@base;
+  padding-right: 44rem/@base;
+  background-color: @color;
+
+  a {
+    width: 48rem/@base;
+    height: 48rem/@base;
+    display: block;
+    background: url("../images/icback.svg") no-repeat;
+    background-size: 20rem/@base 20rem/@base;
+    background-clip: content-box;
+    background-origin: content-box;
+    padding: 14rem/@base;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  h3 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    line-height: 50rem/@base;
+    font-size: 18rem/@base;
+  }
+}
+
+.content {
+
+  .topTitle {
+    font-size: 12rem/@base;
+    text-align: center;
+    margin: 10rem/@base 0;
+    color: #999;
+  }
+
+  ul li {
+    padding: 15rem/@base 10rem/@base 0;
+    height: 138rem/@base;
+
+    a {
+      display: block;
+
+      .imgBox {
+
+        width: 100rem/@base;
+        height: 80rem/@base;
+        float: left;
+        margin-right: 10rem/@base;
+      }
+
+      .desc {
+        overflow: hidden;
+        height: 100%;
+        position: relative;
+
+        .tit {
+          font-size: 14rem/@base;
+          line-height: 20rem/@base;
+          overflow: hidden;
+          padding-right: 10rem/@base;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
+
+        .price {
+          font-size: 14rem/@base;
+          font-weight: 700;
+          margin: 8rem/@base 0;
+        }
+
+        .date {
+          font-size: 12rem/@base;
+          color: @mainColor;
+        }
+
+        .arrow_right {
+          font-size: 14rem/@base;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 20rem/@base;
+          height: 20rem/@base;
+          background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' vi…746.341213 299.567141Z' transform='translate(0, 812) scale(1, -1)'/></svg>");
+        }
+      }
+    }
+  }
+
+}
+
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 9999;
+  max-width: 750px;
+  min-width: 320px;
+  display: none;
+
+  .modal-in {
+    width: 200rem/@base;
+    height: 160rem/@base;
+    position: absolute;
+    top: 200rem/@base;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    span {
+      position: absolute;
+      top: 5rem/@base;
+      right: 5rem/@base;
+      width: 15rem/@base;
+      height: 15rem/@base;
+      text-align: center;
+      border-radius: 50%;
+      background: url(../images/icon_bar.png) -180rem/@base -15rem/@base;
+      background-size: 4.4rem 2.64rem;
+    }
+  }
+}
+
+
+.footer {
+
+  .login {
+    margin-top: 0;
+  }
+}

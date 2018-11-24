@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>慢慢买-商品详情</title>
+    <title>慢慢买-优惠券</title>
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/baicaijia.css">
+    <link rel="stylesheet" href="./css/coupon.css">
     <link rel="icon" href="./mmb.ico">
 
 </head>
@@ -16,28 +16,17 @@
     <!-- 头部 -->
     <div class="header">
         <a href="javascript: history.back();" class="fl"></a>
-        <h3>国内折扣</h3>
+        <h3>优惠券</h3>
         <div class="fr">
             <img src="./images/header_app.png" alt="">
         </div>
     </div>
 
-    <!-- 导航 -->
-    <div class="nav">
-        <div class="wrapper">
-            <ul class="clearfix">
-
-            </ul>
-        </div>
-
-
-    </div>
-
-    <!-- 商品列表 -->
+    <!-- 内容区域 -->
     <div class="content">
-       <ul>
+        <ul class="clearfix">
 
-       </ul>
+        </ul>
     </div>
 
     <!-- 底部 -->
@@ -58,37 +47,23 @@
     </div>
 </div>
 
-<!-- 导航栏模版 -->
+<!-- 模版 -->
 <script type="text/html" id="navTmp">
-        {{ each result v i }}
-            <li class="{{ i === 0 ? 'current' : '' }}"><a href="javascript:;" data-id="{{ v.titleId }}">{{ v.title }}</a></li>
-        {{ /each }}
-</script>
-
-<!-- 商品模版 -->
-<script type="text/html" id="goodsTmp">
     {{ each result v i }}
-    <li>
-        <a href="moneyproduct.html?productId={{ v.productId }}">
-            <div class="img fl">
-               {{@v.productImg}}
-            </div>
-            <div class="desc">
-                <div class="tit">{{@v.productName}}</div>
-                <div class="price">{{@v.productPrice}}</div>
-                <div class="remain clearfix">{{@v.productCouponRemain}}</div>
-                <div class="coupon">{{@v.productCoupon}}</div>
-                <div class="href">{{@v.productHref}}</div>
-            </div>
-        </a>
-    </li>
+        <li>
+            <a href="{{ v.couponLink }}?couponid={{ v.couponId }}">
+                <img src="{{ v.couponImg }}" alt="">
+                <p>{{ v.couponTitle }}</p>
+            </a>
+        </li>
     {{ /each }}
 </script>
+
 
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
 <script src="./lib/IScroll/iscroll.js"></script>
 <script src="./js/common.js"></script>
-<script src="./js/baicaijia.js"></script>
+<script src="./js/coupon.js"></script>
 </body>
 </html>

@@ -1,0 +1,81 @@
+@import "adapter";
+@import "vairable";
+
+@color: #F4483E;
+
+.container {
+  background-color: #fff;
+}
+
+.header {
+
+  padding-left: 48rem/@base;
+  padding-right: 44rem/@base;
+  background-color: @color;
+
+  a {
+    width: 48rem/@base;
+    height: 48rem/@base;
+    display: block;
+    background: url("../images/icback.svg") no-repeat;
+    background-size: 20rem/@base 20rem/@base;
+    background-clip: content-box;
+    background-origin: content-box;
+    padding: 14rem/@base;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  h3 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    line-height: 50rem/@base;
+    font-size: 18rem/@base;
+  }
+}
+
+
+.content {
+
+  padding: 15rem/@base 5rem/@base 0 12rem/@base;
+
+  li {
+    width: 32%;
+    height: 82rem/@base;
+    float: left;
+    border: 1rem/@base solid #ddd;
+    margin-bottom: 5rem/@base;
+
+    &:nth-child(2) {
+      margin: 0 1%;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      padding: 5rem/@base;
+
+      img {
+        width: 50rem/@base;
+        height: 50rem/@base;
+        margin: 0 auto;
+      }
+
+      p {
+        font-size: 14rem/@base;
+        margin-top: 2rem/@base;
+      }
+    }
+  }
+}
+
+
+.footer {
+
+  .login {
+    margin-top: 0;
+  }
+}

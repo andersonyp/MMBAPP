@@ -2,6 +2,7 @@
 @import "vairable";
 @color: #F4483E;
 
+
 .header {
 
   padding-left: 48rem/@base;
@@ -39,22 +40,17 @@
   line-height: 46rem/@base;
   overflow: hidden;
   position: relative;
-
-  .mui-segmented-control.mui-scroll-wrapper {
-    height: 100%;
-  }
-
-  .mui-segmented-control.mui-scroll-wrapper .mui-scroll {
-    height: 100%;
-  }
+  margin-bottom: 5rem/@base;
 
   ul {
     height: 100%;
-    width: 1500px;
+    width: 16rem;
+    margin: 0;
 
     li {
       height: 100%;
       float: left;
+      height: 46rem/@base;
       margin: 0 13rem/@base;
 
       a {
@@ -64,11 +60,120 @@
         font-size: 14rem/@base;
         color: #000;
 
-        &.current {
-          color: @color;
+      }
+
+      &.current a {
+        color: @color;
+        border-bottom: 2rem/@base solid @color;
+      }
+    }
+  }
+}
+
+.content {
+
+  ul li {
+    background-color: #fff;
+    margin-bottom: 5rem/@base;
+    padding: 15rem/@base 0 5rem/@base;
+    height: 150rem/@base;
+
+    &>a {
+      display: block;
+      width: 130rem/@base;
+      height: 130rem/@base;
+      float: left;
+
+      .img {
+
+        border: 1px solid #ccc;
+      }
+
+    }
+
+    .desc {
+      height: 100%;
+      padding: 0 10rem/@base;
+      overflow: hidden;
+      position: relative;
+
+      .tit {
+        font-size: 14rem/@base;
+        line-height: 1.5;
+        margin-bottom: 10rem/@base;
+      }
+
+      .price {
+        color: @color;
+        font-size: 24rem/@base;
+
+        em {
+          font-style: normal;
+          font-size: 12rem/@base;
+        }
+
+        del {
+          font-size: 12rem/@base;
+          color: #999;
+          margin-left: 10rem/@base;
+        }
+      }
+
+      .remain {
+
+        i {
+          display: inline-block;
+          width: 82rem/@base;
+          height: 14rem/@base;
+          border: 1rem/@base solid #fc353a;
+          border-radius: 7rem/@base;
+          text-align: center;
+          background-color: #FFB7B7;
+          line-height: 12rem/@base;
+
+          span {
+            font-style: normal;
+            font-size: 12rem/@base;
+            color: #fff;
+          }
+
+        }
+
+        b {
+          font-size: 14rem/@base;
+          color: #fc353a;
+          margin-left: 20rem/@base;
+        }
+      }
+
+      .coupon {
+        height: 26rem/@base;
+        position: absolute;
+        bottom: 0rem/@base;
+        left: 10rem/@base;
+        padding: 0 5rem/@base;
+        font-size: 12rem/@base;
+        border: 1px dashed #fc353a;
+        line-height: 26rem/@base;
+      }
+
+      .href {
+        position: absolute;
+        bottom: 0rem/@base;
+        right: 10rem/@base;
+        height: 28rem/@base;
+        padding: 0 5rem/@base;
+        font-size: 12rem/@base;
+        line-height: 28rem/@base;
+        background-color: #FF5E5D;
+        border-radius: 5rem/@base;
+
+        a {
+          color: #fff;
         }
       }
     }
+
   }
 }
 

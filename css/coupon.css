@@ -59,6 +59,7 @@
 .header {
   padding-left: 0.96rem;
   padding-right: 0.88rem;
+  background-color: #f4483e;
 }
 .header a {
   width: 0.96rem;
@@ -81,45 +82,33 @@
   line-height: 1rem;
   font-size: 0.36rem;
 }
-.product ul li {
-  width: 50%;
+.content {
+  padding: 0.3rem 0.1rem 0 0.24rem;
+}
+.content li {
+  width: 32%;
+  height: 1.64rem;
   float: left;
-  height: 5.3rem;
-  padding: 0.3rem 0.3rem 0.3rem 0.44rem;
-  border-right: 0.02rem solid #cccccc;
-  border-bottom: 0.02rem solid #cccccc;
+  border: 0.02rem solid #dddddd;
+  margin-bottom: 0.1rem;
 }
-.product ul li:nth-child(2n) {
-  border-right: none;
+.content li:nth-child(2) {
+  margin: 0 1%;
 }
-.product ul li a {
+.content li a {
   display: block;
+  text-align: center;
+  padding: 0.1rem;
 }
-.product ul li a img {
-  width: 2.8rem;
-  height: 2.8rem;
+.content li a img {
+  width: 1rem;
+  height: 1rem;
   margin: 0 auto;
 }
-.product ul li .desc p {
+.content li a p {
   font-size: 0.28rem;
-  font-weight: 700;
-  color: #333;
+  margin-top: 0.04rem;
 }
-.product ul li .desc p.proName {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-.product ul li .desc .bottom span:first-child {
-  display: block;
-  height: 0.36rem;
-  line-height: 0.36rem;
-  font-size: 0.28rem;
-  color: #ff841d;
-  margin: 0.16rem 0;
-}
-.product ul li .desc .bottom span:last-child {
-  font-size: 0.24rem;
-  color: #999;
+.footer .login {
+  margin-top: 0;
 }
