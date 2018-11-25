@@ -88,6 +88,8 @@
   border-radius: 0.3rem;
   font-size: 0.32rem;
   color: #fff;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 /* 导航栏 */
 .nav {

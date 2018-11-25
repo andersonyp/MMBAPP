@@ -10,7 +10,7 @@ $(function () {
 
             var $more = $('.nav .more');
             $more.on('click',function () {
-                $('.nav_list.more ~ .nav_list').toggleClass('hide');
+                $('.nav_list.more ~ .nav_list').slideToggle(500);
             })
         }
     })

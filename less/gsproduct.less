@@ -1,0 +1,188 @@
+@import "vairable";
+@import "adapter";
+
+.container {
+  padding-bottom: 95rem/@base;
+}
+
+.header {
+
+  padding-left: 48rem/@base;
+  padding-right: 44rem/@base;
+
+  a {
+    width: 48rem/@base;
+    height: 48rem/@base;
+    display: block;
+    background: url("../images/icback.svg") no-repeat;
+    background-size: 20rem/@base 20rem/@base;
+    background-clip: content-box;
+    background-origin: content-box;
+    padding: 14rem/@base;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  h3 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    line-height: 50rem/@base;
+    font-size: 18rem/@base;
+  }
+}
+
+.nav {
+  background-color: #fff;
+  height: 40rem/@base;
+  position: relative;
+  border-bottom: 1rem/@base solid #ccc;
+
+  > ul {
+
+    margin-right: 50rem/@base;
+
+
+
+    > li {
+      width: 33%;
+      height: 40rem/@base;
+      float: left;
+      line-height: 40rem/@base;
+      text-align: center;
+      position: relative;
+      padding-left: 10%;
+      border-bottom: 1rem/@base solid #ccc;
+
+
+      >a {
+        font-size: 14rem/@base;
+        background-color: #fff;
+        height: 100%;
+      }
+
+      i {
+        width: 20rem/@base;
+        height: 10rem/@base;
+        display: inline-block;
+        margin-top: -5rem/@base;
+        vertical-align: middle;
+        text-align: left;
+        margin-left: 3rem/@base;
+        color: #666;
+      }
+
+      &:last-child {
+        border-right: 1rem/@base solid #ccc;
+
+      }
+
+    }
+
+    ul.shopNav {
+      position: absolute;
+      top: 40rem/@base;
+      width: 100%;
+      text-align: left;
+      background-color: #fff;
+      display: none;
+
+      li {
+        padding-left: 10rem/@base;
+        border-bottom: 1rem/@base solid #ccc;
+        height: 40rem/@base;
+        line-height: 40rem/@base;
+
+        a {
+          font-size: 14rem/@base;
+        }
+      }
+    }
+
+    ul.areaNav {
+      position: absolute;
+      left: 0;
+      top: 40rem/@base;
+      width: 100%;
+      text-align: left;
+      background-color: #fff;
+      display: none;
+
+      li {
+        padding-left: 10rem/@base;
+        border-bottom: 1rem/@base solid #ccc;
+        height: 40rem/@base;
+        line-height: 40rem/@base;
+
+        a {
+          font-size: 14rem/@base;
+        }
+      }
+    }
+  }
+}
+
+
+.goods {
+  padding: 10rem/@base 5rem/@base 20rem/@base 10rem/@base;
+  
+  ul li {
+    width: 48%;
+    float: left;
+    background-color: #fff;
+    height: 235rem/@base;
+    padding: 5rem/@base 10rem/@base;
+    margin-bottom: 10rem/@base;
+
+    &:nth-child(2n) {
+      margin-left: 2%;
+    }
+
+    a {
+      display: block;
+
+      img {
+        width: 164rem/@base;
+        height: 164rem/@base;
+        margin: 0 auto;
+      }
+
+      .desc {
+
+        p {
+          font-size: 12rem/@base;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .bottom {
+          margin-top: 20rem/@base;
+
+          .price {
+            font-size: 20rem/@base;
+            line-height: 27rem/@base;
+            color: #F8601D;
+            padding-bottom: 5rem/@base;
+          }
+
+          .tobuy {
+            width: 62rem/@base;
+            height: 27rem/@base;
+            background-color: #FF9501;
+            text-align: center;
+            line-height: 27rem/@base;
+            font-size: 14rem/@base;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer .login {
+  margin: 0;
+}
