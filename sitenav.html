@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>慢慢买-商品详情</title>
+    <title>慢慢买-省钱控</title>
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/moneyproduct.css">
+    <link rel="stylesheet" href="./css/sitenav.css">
     <link rel="icon" href="./mmb.ico">
 
 </head>
@@ -15,27 +15,19 @@
 <div class="container">
     <!-- 头部 -->
     <div class="header">
-        <a href="javascript: history.back();" class="fl"></a>
-        <h3>国内折扣</h3>
+        <a href="index.html" class="fl"></a>
+        <h3>商城导航</h3>
         <div class="fr">
             <img src="./images/header_app.png" alt="">
         </div>
     </div>
 
-    <div class="main">
-        <div class="mon_product">
+    <div class="sitenav">
+        <ul class="clearfix">
 
-        </div>
-
-        <div class="goLink">前往购买</div>
-
-        <div class="mmb_extra">
-
-
-
-        </div>
-
+        </ul>
     </div>
+
 
     <!-- 底部 -->
     <div class="footer">
@@ -55,37 +47,23 @@
     </div>
 </div>
 
-<!-- 商品详情模版 -->
-<script type="text/html" id="productTmp">
-    <% var v = result[0] %>
 
-    <h3>{{ v.productName }}</h3>
-    <div class="subtitle">
-        <span>{{ v.productFrom }}</span>
-        <span>{{ v.productTime }}</span>
-        <span>{{ v.productTips }}</span>
-    </div>
-    <div class="content">
-        {{@v.productImg2}}
-        <p>{{ v.productInfo }}{{ v.productInfo1 }}</p>
-        <p>{{ v.productInfo2 }}</p>
-        {{@v.productImgSm}}
-    </div>
-    {{@v.productCity}}
+<!-- 只能模版 -->
+<script type="text/html" id="navTmp">
+    {{ each result v i }}
+        <li>
+            <a href="{{ v.navHref }}">
+                <img src="{{ v.navImg }}" alt="">
+                {{ v.navTitle }}
+            </a>
+        </li>
+    {{ /each }}
 </script>
 
-<!-- 二维码模版 -->
-<script type="text/html" id="commonTmp">
-    <% var v = result[0] %>
-    <div class="wechatCode">
-        <img src="./images/mmbweixin2.png" alt="">
-    </div>
-    {{@v.productComment}}
-</script>
 
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
 <script src="./js/common.js"></script>
-<script src="./js/moneyproduct.js"></script>
+<script src="./js/sitenav.js"></script>
 </body>
 </html>
