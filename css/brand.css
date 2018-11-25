@@ -1,0 +1,301 @@
+@media (min-width: 320px) {
+  html {
+    font-size: 38.1px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 42.86px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 44.64px;
+  }
+}
+@media (min-width: 384px) {
+  html {
+    font-size: 45.71px;
+  }
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 47.62px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 49.29px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 50.48px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 57.14px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 64.29px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 85.71px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 89.29px;
+  }
+}
+.container {
+  background-color: #fff;
+}
+.nav {
+  height: 0.76rem;
+  background-image: linear-gradient(to bottom, #ffffff, #ebebeb);
+  border-top: 0.02rem solid #cccccc;
+  border-bottom: 0.02rem solid #cccccc;
+  line-height: 0.76rem;
+  padding: 0 0.2rem;
+}
+.nav a {
+  display: block;
+  float: left;
+  font-size: 0.28rem;
+  padding: 0 0.05rem;
+}
+.nav a span {
+  margin-left: 0.1rem;
+}
+.nav button {
+  width: 1.2rem;
+  height: 0.56rem;
+  margin-top: 0.1rem;
+  line-height: 0.56rem;
+  border-radius: 0.1rem;
+  background: linear-gradient(to bottom, #d7d7d7, #f5f5f5);
+  font-size: 0.28rem;
+  outline-style: none;
+  border: none;
+  border-bottom: 0.02rem solid #cccccc;
+  box-shadow: 0 0.02rem 0.04rem #888888;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+/* 搜索框 */
+.search {
+  height: 1.02rem;
+  background-color: #fff;
+  padding: 0.2rem;
+  position: relative;
+  padding-right: 1.66rem;
+}
+.search .search_input {
+  width: 100%;
+  height: 0.6rem;
+}
+.search .search_input input {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  padding-left: 0.4rem;
+  border-radius: 0.3rem;
+  font-size: 0.28rem;
+}
+.search .search_btn {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  width: 1.26rem;
+  height: 0.6rem;
+}
+.search .search_btn button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #ff841d;
+  border-radius: 0.3rem;
+  font-size: 0.32rem;
+  color: #fff;
+}
+.hotorder {
+  height: 0.7rem;
+  border: 0.02rem solid transparent;
+  border-bottom-color: #ccc;
+  line-height: 0.7rem;
+  padding-left: 0.2rem;
+  font-size: 0.28rem;
+  background-color: #EEEEEE;
+  color: #874604;
+}
+.productNav ul li {
+  height: 1.46rem;
+  padding: 0.22rem;
+  border-bottom: 0.02rem solid #cccccc;
+}
+.productNav ul li:nth-child(1) .rank {
+  background-color: #FF0000;
+}
+.productNav ul li:nth-child(2) .rank {
+  background-color: #FFA500;
+}
+.productNav ul li:nth-child(3) .rank {
+  background-color: #ADFF2F;
+}
+.productNav ul li:last-child {
+  border-bottom: none;
+}
+.productNav ul li a {
+  display: block;
+  position: relative;
+}
+.productNav ul li a i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -0.18rem;
+  font-size: 0.32rem;
+  color: #999;
+}
+.productNav ul li a .rank {
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 0.4rem;
+  float: left;
+  color: #fff;
+}
+.productNav ul li a .desc {
+  overflow: hidden;
+}
+.productNav ul li a .desc p {
+  margin-left: 0.2rem;
+}
+.productNav ul li a .desc p:nth-child(1) {
+  font-size: 0.32rem;
+}
+.productNav ul li a .desc p:nth-child(2) {
+  font-size: 0.24rem;
+  margin-top: 0.1rem;
+  color: #999;
+}
+.saleBox ul li {
+  height: 2.6rem;
+  padding: 0.3rem 0.4rem 0.34rem 0.3rem;
+  border-bottom: 0.02rem solid #cccccc;
+}
+.saleBox ul li:last-child {
+  border-bottom: none;
+}
+.saleBox ul li a {
+  display: block;
+}
+.saleBox ul li a .imgBox {
+  margin-right: 0.2rem;
+}
+.saleBox ul li a .imgBox img {
+  width: 2rem;
+  height: 2rem;
+}
+.saleBox ul li a .desc {
+  overflow: hidden;
+}
+.saleBox ul li a .desc p {
+  font-size: 0.28rem;
+  line-height: 0.44rem;
+}
+.saleBox ul li a .desc .s-center {
+  margin: 0.2rem 0;
+}
+.saleBox ul li a .desc .s-center .price {
+  font-size: 0.32rem;
+  color: #f00;
+}
+.saleBox ul li a .desc .s-center .star {
+  float: right;
+  width: 2rem;
+  height: 0.4rem;
+  background-image: url("../images/star.svg");
+  background-size: 0.4rem 0.4rem;
+}
+.saleBox ul li a .desc .s-bot {
+  font-size: 0.24rem;
+  color: #999;
+}
+.newComment ul li {
+  padding: 0.22rem;
+  border-bottom: 0.02rem solid #cccccc;
+}
+.newComment ul li a {
+  display: block;
+}
+.newComment ul li a .comTop .imgBox {
+  width: 2rem;
+  height: 2rem;
+  float: left;
+  margin-right: 0.2rem;
+}
+.newComment ul li a .comTop .desc {
+  overflow: hidden;
+  font-size: 0.28rem;
+  color: #999;
+}
+.newComment ul li a .comBottom {
+  background-color: #F8F8F8;
+  padding: 0.3rem;
+  border: 0.02rem solid #cccccc;
+  position: relative;
+}
+.newComment ul li a .comBottom:before,
+.newComment ul li a .comBottom:after {
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  border-bottom: 0.16rem solid #ccc;
+  border-left: 0.14rem solid transparent;
+  border-right: 0.14rem solid transparent;
+}
+.newComment ul li a .comBottom:before {
+  position: absolute;
+  top: -0.14rem;
+  left: 0.6rem;
+}
+.newComment ul li a .comBottom:after {
+  position: absolute;
+  top: -0.12rem;
+  left: 0.6rem;
+  border-bottom-color: #F8F8F8;
+}
+.newComment ul li a .comBottom .comHeader {
+  font-size: 0.28rem;
+  color: #4F6900;
+}
+.newComment ul li a .comBottom .comHeader .star {
+  position: relative;
+  display: inline-block;
+  top: 0.1rem;
+  left: 0rem;
+  width: 2rem;
+  height: 0.4rem;
+  background-image: url("../images/star.svg");
+  background-size: 0.4rem 0.4rem;
+}
+.newComment ul li a .comBottom .comHeader .date {
+  float: right;
+  color: #999;
+}
+.newComment ul li a .comBottom .comment {
+  margin-top: 0.2rem;
+  font-size: 0.3rem;
+  line-height: 0.44rem;
+}
+.footer .login {
+  margin-top: 0;
+}
