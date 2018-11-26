@@ -1,21 +1,19 @@
-$(function () {
-    var productId = getSearch("productId");
+$(function (){
+    var productid = getSearch('productId');
 
-    console.log(productId);
-
+    console.log(productid);
 
     $.ajax({
-        type: 'get',
         url: 'http://127.0.0.1:9090/api/getmoneyctrlproduct',
         data: {
-            productid: productId
+            productid: productid
         },
-        dataType1: 'json',
-        success: function (info) {
+        dataType: 'json',
+        success: function (info){
             console.log(info);
+            $(".mon_product").html(template("productTmp",info));
 
-            $('.mon_product').html( template("productTmp", info) );
-            $('.mmb_extra').html( template("commonTmp",info) );
+            $(".mmb_extra").html(template("commonTmp",info));
         }
     })
 })

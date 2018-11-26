@@ -10,10 +10,10 @@ $(function () {
 
             var $more = $('.nav .more');
             $more.on('click',function () {
-                $('.nav_list.more ~ .nav_list').slideToggle(500);
+                $('.nav_list.more ~ .nav_list').stop().slideToggle(500);
             })
         }
-    })
+    });
 
     // 2-获取商品列表数据渲染页面
     $.ajax({
@@ -21,7 +21,8 @@ $(function () {
         dataType: 'json',
         success: function (info) {
             console.log(info);
-            $('.goodsList .content ul').html( template("goodsTmp",info) );
+            $('.goodsList .content ul').html( template("goodsTmp",info) );   
+            
         }
     })
 })

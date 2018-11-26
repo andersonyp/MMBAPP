@@ -79,7 +79,7 @@
 <script type="text/html" id="navTmp">
     {{ each result v i }}
         <li class="nav_list {{ i === 7 ? 'more' : '' }}{{ i > 7 ? 'hide' : '' }}" data-id="{{ v.indexmenuId }}">
-            <a href="{{ v.titlehref }}">
+            <a href="{{ i === 7 ? 'javascript:;' : v.titlehref }}">
                 {{@v.img}}
                 <p>{{ v.name }}</p>
             </a>
